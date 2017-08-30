@@ -5,9 +5,7 @@ class StickyNavigation {
 		this.currentTab = null;
 		this.tabContainerHeight = 70;
 		let self = this;
-		$(document).on('click', '.et-hero-tab',function() { 
-			console.log("SADDSFDASGFSDGFSDGDS")
-			
+		$(document).on('click', '.et-hero-tab',function() { 			
 			self.onTabClick(event, $(this)); 
 		});
 		$(window).scroll(() => { this.onScroll(); });
