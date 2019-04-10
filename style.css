@@ -1,5 +1,5 @@
  .landing-section {
-     background-image: url("minimal.jpg") !important;
+     /* background-image: url("minimal.jpg") !important; */
 
      min-height: 700px;
                 
@@ -10,15 +10,18 @@
  }
 
  .et-slide {
-     background-image: url("Triangle.jpg") !important;
+     /* background-image: url("Triangle.jpg") !important; */
     
      background-attachment: fixed !important;
      background-position: center !important;
      background-repeat: no-repeat !important;
      background-size: cover !important;
+
+     padding-left: 0px !important;     
+     padding-right: 0px !important;
  }
 
-body {
+  body {
     font-family: "Century Gothic", 'Lato', sans-serif;
     margin: 0;
   }
@@ -58,7 +61,7 @@ body {
   .et-slide h3 {
     font-size: 1rem;
     letter-spacing: 0.3rem;
-    opacity: 0.6;
+    opacity: 1;
   }
   
   .et-hero-tabs-container {
@@ -117,6 +120,16 @@ body {
     -webkit-transition: left 0.3s ease;
     transition: left 0.3s ease;
   }
+
+  .section-body {
+    text-align: left;
+    max-width: 700px;
+  }
+
+  .section-body h3 {
+    letter-spacing: 0;
+    font-size: 20px !important;
+  }
   
   @media (min-width: 800px) {
     .et-hero-tabs h1,
@@ -130,5 +143,13 @@ body {
   
     .et-hero-tab {
       font-size: 1rem;
+    }
+  }
+  
+  /* Override tabs to show at top when on mobile */
+  @media screen and (max-width: 500px) {
+    .et-hero-tabs-container {
+      position: fixed;
+      top: 0;
     }
   }
